@@ -19,6 +19,9 @@ export class User {
 
     @Prop({type: [String], default: ['user']})
     roles: string[];
+
+    @Prop({default: false})
+    haVotado: boolean;
 }
 
 export const  UserSchema = SchemaFactory.createForClass(User);
